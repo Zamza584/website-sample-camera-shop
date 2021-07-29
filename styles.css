@@ -1,0 +1,111 @@
+/* basic construct */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 10rem 0;
+}
+
+header {
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+/* nav styling */
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid cornflowerblue;
+}
+
+.logo-container {
+  width: 20rem;
+}
+
+.menu-icons ion-icon {
+  font-size: 4rem;
+  color: brown;
+  cursor: pointer;
+}
+
+.closed ion-icon {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  color: chartreuse;
+}
+
+.menu-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: lightslategray;
+  position: fixed;
+  top: 0;
+  right: -27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  transition: all 300ms ease-in-out;
+}
+
+.menu-option {
+  margin: 2rem 0;
+}
+.menu-option a {
+  font-size: 2.5rem;
+  color: ivory;
+}
+
+.active {
+  right: 0;
+}
+
+/* hero */
+
+.introduction {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(
+      120deg,
+      rgba(235, 114, 114, 0.5) 0%,
+      rgba(235, 110, 30, 0.1) 100%
+    ),
+    url("images/background.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
