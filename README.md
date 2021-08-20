@@ -2,4 +2,4 @@
 
 camera-shop-website
 some of the main features it will have:
-display the products of the different cameras.
+display the products of different cameras from data base

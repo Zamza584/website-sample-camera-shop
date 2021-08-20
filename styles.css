@@ -88,12 +88,14 @@ nav {
   flex-direction: column;
   text-transform: uppercase;
   transition: all 300ms ease-in-out;
+  z-index: 2;
 }
 
 .menu-option {
   margin: 2rem 0;
+  position: relative;
 }
-.menu-option a {
+.menu-option > a {
   font-size: 2.5rem;
   color: ivory;
 }
@@ -159,11 +161,13 @@ nav {
   color: bisque;
   text-transform: uppercase;
   border-radius: 3rem;
+  transition: background 1s ease-out;
   font: 1.6rem "Roboto Mono";
 }
 
 .btn:hover {
   background-color: var(--p-color-text);
+  border-radius: 3rem;
 }
 
 /* products section */
@@ -192,7 +196,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-  z-index: 1;
+  z-index: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +288,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 820px) {
   header {
     height: 8rem;
   }
@@ -305,15 +309,43 @@ footer {
     display: none;
   }
 
-  .menu-option a {
+  .menu-option > a {
     padding: 1rem 2rem;
     position: relative;
+    margin: 0 1rem;
     letter-spacing: 0.2rem;
+    border-radius: 2rem;
     font-size: 1.5rem;
+    transition: background 1s ease-out, color 1s ease-out;
   }
-  .menu-option a:hover {
+
+  .menu-option > a:hover {
     background: rgba(98, 62, 255, 0.493);
     border-radius: 2rem;
+    color: black;
+  }
+  .sub-menu-options {
+    top: 2.2em;
+    position: absolute;
+    left: 1em;
+    border-radius: 1.2rem;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: seashell;
+    display: none;
+    width: 80%;
+  }
+  .sub-menu-options li {
+    padding: 1rem;
+  }
+
+  .menu-option:focus,
+  .menu-option:hover .sub-menu-options {
+    display: block;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
   }
 }
 @media screen and (min-width: 950px) {
