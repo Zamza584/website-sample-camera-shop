@@ -113,7 +113,7 @@ nav {
       rgba(235, 114, 114, 0.5) 0%,
       rgba(235, 110, 30, 0.1) 100%
     ),
-    url("images/background.jpg") center no-repeat;
+    url("/images/background.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -125,7 +125,7 @@ nav {
   bottom: -3px;
   height: 5em;
   width: 100%;
-  background: url("images/wave-small.png") center no-repeat;
+  background: url("/images/wave-small.png") center no-repeat;
   background-size: cover;
 }
 
@@ -232,19 +232,19 @@ nav {
   z-index: -1;
 }
 .instant-camera {
-  background-image: url("images/instant-camera.jpg");
+  background-image: url("/images/instant-camera.jpg");
 }
 
 .hand-camera {
-  background-image: url("images/hand-camera.jpg");
+  background-image: url("/images/hand-camera.jpg");
 }
 
 .cannon {
-  background-image: url("images/cannon.jpg");
+  background-image: url("/images/cannon.jpg");
 }
 
 .lense {
-  background-image: url("images/lense.jpg");
+  background-image: url("/images/lense.jpg");
 }
 
 .location {
@@ -255,7 +255,7 @@ nav {
       rgba(235, 114, 114, 0.5) 0%,
       rgba(235, 110, 30, 0.1) 100%
     ),
-    url("images/location-store.jpg") center no-repeat fixed;
+    url("/images/location-store.jpg") center no-repeat fixed;
   background-size: cover;
   position: relative;
 }
@@ -283,7 +283,7 @@ footer {
 @media screen and (min-width: 470px) {
   .introduction::before {
     height: 9.4rem;
-    background: url("images/wave-medium.png");
+    background: url("/images/wave-medium.png");
     background-size: cover;
   }
 }
@@ -354,7 +354,7 @@ footer {
   }
   .introduction::before {
     height: 22.7rem;
-    background: url("images/wave-large.png");
+    background: url("/images/wave-large.png");
     background-size: cover;
   }
 }
