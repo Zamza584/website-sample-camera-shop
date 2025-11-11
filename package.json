@@ -4,6 +4,7 @@
     "node": "^19.8.1"
   },
   "scripts": {
+    "dev": "node server.js",
     "start": "node server.js"
   },
   "name": "website-sample-camera-shop",
